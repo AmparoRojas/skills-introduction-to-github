@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  background-color: #5b559d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: #fff; */
+
+  /* HEADER */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+
+      .menu ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 10px;
+        gap: 50px;
+
+        li a {
+          margin-right: 20px;
+          text-decoration: none;
+          color: rgb(44, 30, 84);
+        }
+
+        li a:hover{
+          color: #5b559d;
+        }
+      }
+/* 
+      .menu ul li a {
+        margin: 20px;
+        text-decoration: none;
+        color: rgb(44, 30, 84);
+      } */
+
+      /* .menu a:hover {
+        color: rgb(44, 30, 84, 0.4);
+        text-decoration: line-through;
+      } */
+    }
+  }
+  /* FIN HEADER */
+
+  /* MAIN */
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color: #fff;
+
+    /* LEFT */
+    .main_left {
+      width: 70%;
+
+      img {
+        width: 100%;
+      }
+
+      h2 {
+        padding: 10px 50px;
+        margin-top: 20px;
+        color: aqua;
+      }
+
+      p {
+        padding: 10px 50px;
+      }
+    }
+    /* FIN LEFT */
+
+    /* RIGHT */
+    .main_right {
+      width: 30%;
+      background-color: rgb(24, 24, 24);
+      color: white;
+      padding: 20px;
+
+      h3 {
+        color: aquamarine;
+        margin: 20px 0px;
+        border-bottom: 1px solid aquamarine;
+      }
+
+      .main_right_top {
+        margin-bottom: 10px;
+
+        ul li a {
+          text-decoration: none;
+          color: rgb(217, 213, 227);
+          text-align: left;
+        }
+
+        ul {
+          list-style: none;
+        }
+
+        a:hover {
+          color: rgba(156, 147, 182, 0.4);
+        }
+
+        li {
+          padding: 10px 0;
+          line-height: 25px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.728);
+        }
+      }
+
+      .main_right_bottom {
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+    }
+    /* FIN RIGHT */
+  }
+  /* FOOTER */
+  .footer-container {
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    /* text-align: center;
+    color: bisque; */
+    padding: 20px;
+
+    p {
+      text-align: center;
+      color: #fcfcfe;
+      font-size: .75rem;
+    }
+  }
+  /* FIN FOOTER */
+}
